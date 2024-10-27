@@ -1,7 +1,10 @@
+# Environment Variables
+*.env
+
 # Pycharm Files
 *.xml
 *.iml
 
-
 # Poetry Files
 *.lock
+
