@@ -1,9 +1,9 @@
 [tool.poetry]
 name = "option-util"
-version = "0.1.1"
+version = "0.1.2"
 description = ""
 authors = ["David Mckim <davidmckim@gmail.com>"]
-readme = "README.md"
+readme = "README.rst"
 
 [tool.poetry.dependencies]
 python = "^3.10"
