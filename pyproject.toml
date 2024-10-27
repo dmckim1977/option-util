@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "option-util"
 version = "0.1.2"
-description = ""
+description = "Simple package for access to common options helper scripts."
 authors = ["David Mckim <davidmckim@gmail.com>"]
 readme = "README.rst"
 
@@ -20,3 +20,6 @@ sphinx = "^8.1.3"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[project.urls]
+Repository = "https://github.com/dmckim1977/option-util"

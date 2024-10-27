@@ -3,12 +3,14 @@ option-util
 
 **option-util** is a simple library to make simple scripts easily available for working with options.
 
-## Examples
+Examples
+========
 
-### Return the next expiration by type of expiration.
+Return the next expiration by type of expiration.
+-------------------------------------------------
 
-The available options are `friday`, `third_friday`, `quarter_end`,
-`next_bus_day`, `wednesday`, `quarter_third_friday`.
+- The available options are `friday`, `third_friday`, `quarter_end`, `next_bus_day`, `wednesday`, `quarter_third_friday`.::
+
 
     >>> # Return the next expiration by type.
     >>> next_exp_by_type = expirations.next_expiration(
@@ -17,7 +19,9 @@ The available options are `friday`, `third_friday`, `quarter_end`,
     >>> print(f'Next Expiration by Type: {next_exp_by_type}')
     Next Expiration by Type: 2024-11-01
 
-### Return the next expiration by all types.
+
+### Return the next expiration by all types.::
+
 
     >>> # Get future expirations
     >>> all_expirations = expirations.future_expirations(
@@ -37,7 +41,7 @@ Features
 Installation
 ------------
 
-Install option-util by running:
+Install option-util by running::
 
     pip install option-util
 
