@@ -4,6 +4,7 @@ version = "0.1.2"
 description = ""
 authors = ["David Mckim <davidmckim@gmail.com>"]
 readme = "README.rst"
+repository = "https://github.com/dmckim1977/option-util"
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -22,5 +23,3 @@ twine = "^5.1.1"
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
-[project.urls]
-Repository = "https://github.com/dmckim1977/option-util"
