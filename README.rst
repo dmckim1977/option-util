@@ -43,12 +43,10 @@ Installation
 
 Install option-util by running::
 
+
     pip install option-util
 
-Contribute
-----------
 
-- to follow
 
 Support
 -------
