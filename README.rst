@@ -1,5 +1,8 @@
 option-util
-========
+===========
+
+Description
+-----------
 
 **option-util** is a simple library to make simple scripts easily available for working with options.
 
@@ -20,7 +23,7 @@ Return the next expiration by type of expiration.
     Next Expiration by Type: 2024-11-01
 
 
-### Return the next expiration by all types.::
+Return the next expiration by all types.::
 
 
     >>> # Get future expirations
