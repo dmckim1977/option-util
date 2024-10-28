@@ -1,0 +1,244 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>option_util package &mdash; option-util 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=2709fde1"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            option-util
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">option_util package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-option_util.expirations">option_util.expirations module</a><ul>
+<li><a class="reference internal" href="#option_util.expirations.future_expirations"><code class="docutils literal notranslate"><span class="pre">future_expirations()</span></code></a></li>
+<li><a class="reference internal" href="#option_util.expirations.next_business_day"><code class="docutils literal notranslate"><span class="pre">next_business_day()</span></code></a></li>
+<li><a class="reference internal" href="#option_util.expirations.next_expiration"><code class="docutils literal notranslate"><span class="pre">next_expiration()</span></code></a></li>
+<li><a class="reference internal" href="#option_util.expirations.next_friday"><code class="docutils literal notranslate"><span class="pre">next_friday()</span></code></a></li>
+<li><a class="reference internal" href="#option_util.expirations.next_monthly_expiration"><code class="docutils literal notranslate"><span class="pre">next_monthly_expiration()</span></code></a></li>
+<li><a class="reference internal" href="#option_util.expirations.next_quarter_end"><code class="docutils literal notranslate"><span class="pre">next_quarter_end()</span></code></a></li>
+<li><a class="reference internal" href="#option_util.expirations.next_quarter_third_friday"><code class="docutils literal notranslate"><span class="pre">next_quarter_third_friday()</span></code></a></li>
+<li><a class="reference internal" href="#option_util.expirations.parse_contract_symbol"><code class="docutils literal notranslate"><span class="pre">parse_contract_symbol()</span></code></a></li>
+<li><a class="reference internal" href="#option_util.expirations.previous_business_day"><code class="docutils literal notranslate"><span class="pre">previous_business_day()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-option_util">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">option-util</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">option_util package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/option_util.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="option-util-package">
+<h1>option_util package<a class="headerlink" href="#option-util-package" title="Link to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-option_util.expirations">
+<span id="option-util-expirations-module"></span><h2>option_util.expirations module<a class="headerlink" href="#module-option_util.expirations" title="Link to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="option_util.expirations.future_expirations">
+<span class="sig-prename descclassname"><span class="pre">option_util.expirations.</span></span><span class="sig-name descname"><span class="pre">future_expirations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">from_date</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">datetime</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/option_util/expirations.html#future_expirations"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#option_util.expirations.future_expirations" title="Link to this definition"></a></dt>
+<dd><p>Get a list of future options expiration dates.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="option_util.expirations.next_business_day">
+<span class="sig-prename descclassname"><span class="pre">option_util.expirations.</span></span><span class="sig-name descname"><span class="pre">next_business_day</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">from_date</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">date</span></span></span><a class="reference internal" href="_modules/option_util/expirations.html#next_business_day"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#option_util.expirations.next_business_day" title="Link to this definition"></a></dt>
+<dd><p>Get the next trading day from the given date.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="option_util.expirations.next_expiration">
+<span class="sig-prename descclassname"><span class="pre">option_util.expirations.</span></span><span class="sig-name descname"><span class="pre">next_expiration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">expiration_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'friday'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'third_friday'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'quarter_end'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'next_bus_day'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'wednesday'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'quarter_third_friday'</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">from_date</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">date</span></span></span><a class="reference internal" href="_modules/option_util/expirations.html#next_expiration"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#option_util.expirations.next_expiration" title="Link to this definition"></a></dt>
+<dd><p>Get the next expiration date based on the expiration type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>expiration_type</strong> – When the option will expire.
+options: ‘friday’, ‘third_friday’, ‘quarterly’, ‘next_bus_day’,
+‘wednesday’</p></li>
+<li><p><strong>from_date</strong> – The date to make the calculation from.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>datetime.date</p>
+</dd>
+<dt class="field-odd">Example<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Return the next expiration by type.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">next_exp_by_type</span> <span class="o">=</span> <span class="n">expirations</span><span class="o">.</span><span class="n">next_expiration</span><span class="p">(</span>
+<span class="gp">... </span>   <span class="n">expiration_type</span><span class="o">=</span><span class="s1">&#39;friday&#39;</span><span class="p">,</span> <span class="n">from_date</span><span class="o">=</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2024</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">27</span><span class="p">)</span>
+<span class="gp">... </span>   <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Next Expiration by Type: </span><span class="si">{</span><span class="n">next_exp_by_type</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="go">Next Expiration by Type: 2024-11-01</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p>NotImplementedError: If the expiration type is not yet implemented.
+ValueError: If an invalid expiration type is provided.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="option_util.expirations.next_friday">
+<span class="sig-prename descclassname"><span class="pre">option_util.expirations.</span></span><span class="sig-name descname"><span class="pre">next_friday</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">from_date</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">date</span></span></span><a class="reference internal" href="_modules/option_util/expirations.html#next_friday"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#option_util.expirations.next_friday" title="Link to this definition"></a></dt>
+<dd><p>Get the date of the next Friday from the given date.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="option_util.expirations.next_monthly_expiration">
+<span class="sig-prename descclassname"><span class="pre">option_util.expirations.</span></span><span class="sig-name descname"><span class="pre">next_monthly_expiration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">from_date</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">date</span></span></span><a class="reference internal" href="_modules/option_util/expirations.html#next_monthly_expiration"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#option_util.expirations.next_monthly_expiration" title="Link to this definition"></a></dt>
+<dd><p>Get the date of the next monthly options expiration
+(third Friday of the month).</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="option_util.expirations.next_quarter_end">
+<span class="sig-prename descclassname"><span class="pre">option_util.expirations.</span></span><span class="sig-name descname"><span class="pre">next_quarter_end</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">from_date</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">date</span></span></span><a class="reference internal" href="_modules/option_util/expirations.html#next_quarter_end"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#option_util.expirations.next_quarter_end" title="Link to this definition"></a></dt>
+<dd><p>Get the last Friday of the last month in the current quarter.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="option_util.expirations.next_quarter_third_friday">
+<span class="sig-prename descclassname"><span class="pre">option_util.expirations.</span></span><span class="sig-name descname"><span class="pre">next_quarter_third_friday</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">from_date</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">date</span></span></span><a class="reference internal" href="_modules/option_util/expirations.html#next_quarter_third_friday"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#option_util.expirations.next_quarter_third_friday" title="Link to this definition"></a></dt>
+<dd><p>Get the third Friday of the last month of the current quarter.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="option_util.expirations.parse_contract_symbol">
+<span class="sig-prename descclassname"><span class="pre">option_util.expirations.</span></span><span class="sig-name descname"><span class="pre">parse_contract_symbol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">symbol</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="reference internal" href="_modules/option_util/expirations.html#parse_contract_symbol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#option_util.expirations.parse_contract_symbol" title="Link to this definition"></a></dt>
+<dd><p>Parse the contract symbol to extract the strike price.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>symbol</strong> (<em>str</em>) – The contract symbol string.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The strike price extracted from the symbol.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="option_util.expirations.previous_business_day">
+<span class="sig-prename descclassname"><span class="pre">option_util.expirations.</span></span><span class="sig-name descname"><span class="pre">previous_business_day</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">date</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">date</span></span></span><a class="reference internal" href="_modules/option_util/expirations.html#previous_business_day"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#option_util.expirations.previous_business_day" title="Link to this definition"></a></dt>
+<dd><p>Uses pandas calendars to get the previous business day.</p>
+<p><cite>date</cite> can be any day of the week including weekends.
+US Federal holidays are excluded from the results.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>date</strong> – The day to start from.
+YYYY-MM-DD format.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>datetime</p>
+</dd>
+<dt class="field-odd">Example<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Get the previous business day from date</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">prev_bus_day</span> <span class="o">=</span> <span class="n">expirations</span><span class="o">.</span><span class="n">previous_business_day</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">date</span><span class="o">=</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2024</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">27</span><span class="p">))</span> <span class="c1"># Sunday</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">prev_bus_day</span><span class="p">)</span> <span class="c1"># Previous bus day is Friday</span>
+</pre></div>
+</div>
+<p>Next business day: 2024-10-25</p>
+</dd></dl>
+
+</section>
+<section id="module-option_util">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-option_util" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, David McKim.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
