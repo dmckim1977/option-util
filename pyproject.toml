@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "option-util"
-version = "0.1.2"
+version = "0.2.0"
 description = ""
 authors = ["David Mckim <davidmckim@gmail.com>"]
 readme = "README.rst"
@@ -29,5 +29,4 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.urls]
-repository = "https://github.com/dmckim1977/option-util"
-documentation = ""
+documentation = "https://option-util.readthedocs.io/en/latest/#"
