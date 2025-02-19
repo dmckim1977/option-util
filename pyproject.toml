@@ -1,6 +1,6 @@
 [project]
 name = "option-util"
-version = "0.3.2"
+version = "0.3.4"
 description = ""
 authors = [{ name = "David Mckim", email = "davidmckim@gmail.com" }]
 requires-python = "~=3.10"

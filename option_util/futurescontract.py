@@ -150,7 +150,7 @@ class ContractRollover:
             return None
 
         else:
-            return f"XCME:{contract['symbol']}{contract['month_code']}.{str(contract['year'])[2:]}"
+            return f"XCME:{contract['symbol']}.{contract['month_code']}{str(contract['year'])[2:]}"
 
 
     def _get_contract_quarter(self, date: datetime) -> int:
@@ -225,7 +225,7 @@ if __name__ == "__main__":
         next_es = cme.get_next_contract(
             symbol="ES",
             days_before=5,
-            reference_date=datetime(2025, 3, 17),
+            reference_date=datetime(2025, 2, 17),
         )
 
         ironbeam_contract = cme.ironbeam_contract_format(contract=next_es)
