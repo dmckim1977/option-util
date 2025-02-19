@@ -150,7 +150,7 @@ class ContractRollover:
             return None
 
         else:
-            return f"XCME:{contract['symbol']}{contract['month_code']}.{str(contract['year'])[:2]}"
+            return f"XCME:{contract['symbol']}{contract['month_code']}.{str(contract['year'])[2:]}"
 
 
     def _get_contract_quarter(self, date: datetime) -> int:
