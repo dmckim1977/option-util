@@ -1,5 +1,5 @@
 from option_util import expirations
-from futurescontract import ContractRollover
+from option_util.futurescontract import ContractRollover
 
 __all__ = [
     'expirations',
